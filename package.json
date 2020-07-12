@@ -1,6 +1,6 @@
 {
   "name": "kana2mora",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Divide a string of Japanese Kana into mora",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
