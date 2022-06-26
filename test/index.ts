@@ -1,14 +1,15 @@
+import test from "node:test"
 import { strict as assert } from "assert"
 import { katakanaToMora } from "../src"
 
-describe("kana2mora", () => {
-  it("サ|ル", () => {
+test("kana2mora", async (t) => {
+  await t.test("サ|ル", () => {
     assert.deepEqual(katakanaToMora("サル"), ["サ", "ル"])
   })
-  it("カ|ッ|パ", () => {
+  await t.test("カ|ッ|パ", () => {
     assert.deepEqual(katakanaToMora("カッパ"), ["カ", "ッ", "パ"])
   })
-  it("チョ|コ|レ|ー|ト", () => {
+  await t.test("チョ|コ|レ|ー|ト", () => {
     assert.deepEqual(katakanaToMora("チョコレート"), [
       "チョ",
       "コ",
@@ -17,7 +18,7 @@ describe("kana2mora", () => {
       "ト",
     ])
   })
-  it("ガ|ッ|キュ|ウ|シ|ン|ブ|ン", () => {
+  await t.test("ガ|ッ|キュ|ウ|シ|ン|ブ|ン", () => {
     assert.deepEqual(katakanaToMora("ガッキュウシンブン"), [
       "ガ",
       "ッ",
