@@ -51,5 +51,4 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
       - run: deno run -A scripts/build_npm.ts
