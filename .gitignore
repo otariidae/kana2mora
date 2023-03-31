@@ -1,4 +1,5 @@
-dist
+npm
+cov_profile
 
 .idea
 

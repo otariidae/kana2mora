@@ -1,0 +1,20 @@
+{
+  "fmt": {
+    "files": {
+      "exclude": ["npm", "cov_profile"]
+    },
+    "options": {
+      "semiColons": false
+    }
+  },
+  "lint": {
+    "files": {
+      "exclude": ["npm"]
+    }
+  },
+  "test": {
+    "files": {
+      "exclude": ["npm"]
+    }
+  }
+}
