@@ -1,20 +1,12 @@
 {
   "fmt": {
-    "files": {
-      "exclude": ["npm", "cov_profile"]
-    },
-    "options": {
-      "semiColons": false
-    }
+    "exclude": ["npm", "cov_profile"],
+    "semiColons": false
   },
   "lint": {
-    "files": {
-      "exclude": ["npm"]
-    }
+    "exclude": ["npm"]
   },
   "test": {
-    "files": {
-      "exclude": ["npm"]
-    }
+    "exclude": ["npm"]
   }
 }
