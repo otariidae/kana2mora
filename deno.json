@@ -8,5 +8,9 @@
   },
   "test": {
     "exclude": ["npm"]
+  },
+  "imports": {
+    "asserts": "https://deno.land/std@0.181.0/testing/asserts.ts",
+    "dnt": "https://deno.land/x/dnt@0.33.1/mod.ts"
   }
 }
