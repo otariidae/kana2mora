@@ -1,4 +1,4 @@
-import { assertEquals } from "asserts"
+import { assertEquals } from "assert"
 import { katakanaToMora } from "./mod.ts"
 
 Deno.test("サ|ル", () => {
