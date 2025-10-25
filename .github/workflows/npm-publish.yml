@@ -18,7 +18,7 @@ jobs:
           deno-version: v1.x
       - uses: actions/setup-node@v1
         with:
-          node-version: 18
+          node-version: 24
           registry-url: https://registry.npmjs.org/
       - run: deno run -A scripts/build_npm.ts
       - run: npm publish
