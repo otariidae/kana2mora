@@ -8,6 +8,9 @@ await build({
   shims: {
     deno: "dev",
   },
+  compilerOptions: {
+    lib: ["esnext"],
+  },
   package: {
     // package.json properties
     name: "kana2mora",
