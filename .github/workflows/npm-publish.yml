@@ -11,6 +11,9 @@ on:
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: denoland/setup-deno@v1
@@ -23,5 +26,3 @@ jobs:
       - run: deno run -A scripts/build_npm.ts
       - run: npm publish
         working-directory: npm
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
