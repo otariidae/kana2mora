@@ -14,7 +14,7 @@ await build({
   package: {
     // package.json properties
     name: "kana2mora",
-    version: "0.3.0",
+    version: "0.4.0",
     description: "Divide a string of Japanese Kana into mora",
     repository: {
       "type": "git",
