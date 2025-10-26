@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+
+- use trusted publishing
+
 ## 0.3.0
 
 - update Deno version to v2 for development
