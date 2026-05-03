@@ -10,7 +10,7 @@
     "exclude": ["npm"]
   },
   "imports": {
-    "assert": "jsr:@std/assert@^1.0.15",
+    "@std/assert": "jsr:@std/assert@^1.0.15",
     "dnt": "jsr:@deno/dnt@^0.42.3"
   }
 }
